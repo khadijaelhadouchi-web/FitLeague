@@ -40,19 +40,24 @@
             <div class="w-full max-w-350 mx-auto">
                 <div class="flex flex-col gap-2">
                     <div class="pl-10 flex mb-10 h-10 border border-[#EBEFEA] shadow-xs rounded-2xl">
-                        <input class="self-center text-base font-normal text-[#0D382A] border-none outline-none w-full pr-10"
+                        <input
+                            class="self-center text-base font-normal text-[#0D382A] border-none outline-none w-full pr-10"
                             type="text" placeholder="Rechercher un prénom, un nom...">
                     </div>
-                    <div class="flex justify-between items-center text-[15px] font-bold text-[#A3B2A6] pl-6 pr-12 pb-6">
+                    <div class="flex justify-between items-center text-[15px] font-bold text-[#A3B2A6] pl-6 pr-19 pb-6">
                         <p>PARTICIPANT</p>
-                        <div class="flex gap-15">
-                            <p>INSCRIPTION</p>
-                            <p>PERFORMANCE</p>
-                            <p>ACTIONS</p>
+                        <div class="flex gap-20">
+                            <div class="flex gap-17">
+                                <p>INSCRIPTION</p>
+                                <p>PERFORMANCE</p>
+                            </div>
+                            <div>
+                                <p>ACTIONS</p>
+                            </div>
                         </div>
                     </div>
                     <div
-                        class="flex justify-between items-center rounded-xl h-15 px-6 shadow-sm border border-[#EBEFEA] shadow-xs rounded-2xl">
+                        class="flex justify-between items-center rounded-xl h-15 px-5 shadow-sm border border-[#EBEFEA] shadow-xs rounded-2xl" id="participantsList">
                         <p class="text-sm font-bold text-[#0D382A]">Pulga Messi</p>
                         <div class="flex items-center justify-between gap-21">
                             <div class="flex gap-28.5">
@@ -66,6 +71,10 @@
                                 <button
                                     class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-2xl shadow"><i
                                         class="fa-solid fa-user-minus"></i></button>
+                                <button
+                                    class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-2xl shadow"><i
+                                        class="fa-solid fa-pencil"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -78,7 +87,7 @@
                     <p class="font-bold text-[#143B32] text-[12px] self-start pl-10">User</p>
                     <div>
                         <input type="text" placeholder="Entrer un user..."
-                            class="outline-none text-[#143B32] text-[12px] self-start pl-10 h-10 w-80 rounded-xl bg-white">
+                            class="outline-none text-[#143B32] text-[12px] self-start pl-10 h-10 w-80 rounded-xl bg-white" id="searchBar">
                     </div>
                 </div>
                 <div class="flex flex-col gap-2">
@@ -89,10 +98,11 @@
                     </div>
                 </div>
                 <div class="flex flex-col gap-5">
-                    <button class="h-10 w-80 rounded-xl bg-[#143B32] text-white">Ajouter</button>
-                    <button class="h-10 w-80 rounded-xl bg-white" >Annuler </button>
+                    <button class="h-10 w-80 rounded-xl bg-[#143B32] text-white" id="addButton" type="submit">Ajouter</button>
+                    <button class="h-10 w-80 rounded-xl bg-white " type="reset" id="annulerButton">Annuler </button>
                 </div>
             </div>
         </div>
     </main>
+
 </html>
