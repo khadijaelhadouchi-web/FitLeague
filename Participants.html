@@ -31,4 +31,68 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="flex flex-col gap-1.5 pt-10 pl-14 pb-9">
+            <p class="text-[14px] font-normal text-[#143B32]">LES ÉCHAPPÉS</p>
+            <h1 class="text-[52px] font-extrabold text-[#143B32]">Participants</h1>
+        </div>
+        <div class="flex justify-evenly gap-10 px-10">
+            <div class="w-full max-w-350 mx-auto">
+                <div class="flex flex-col gap-2">
+                    <div class="pl-10 flex mb-10 h-10 border border-[#EBEFEA] shadow-xs rounded-2xl">
+                        <input class="self-center text-base font-normal text-[#0D382A] border-none outline-none w-full pr-10"
+                            type="text" placeholder="Rechercher un prénom, un nom...">
+                    </div>
+                    <div class="flex justify-between items-center text-[15px] font-bold text-[#A3B2A6] pl-6 pr-12 pb-6">
+                        <p>PARTICIPANT</p>
+                        <div class="flex gap-15">
+                            <p>INSCRIPTION</p>
+                            <p>PERFORMANCE</p>
+                            <p>ACTIONS</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex justify-between items-center rounded-xl h-15 px-6 shadow-sm border border-[#EBEFEA] shadow-xs rounded-2xl">
+                        <p class="text-sm font-bold text-[#0D382A]">Pulga Messi</p>
+                        <div class="flex items-center justify-between gap-21">
+                            <div class="flex gap-28.5">
+                                <p class="text-[13px] font-bold text-[#0D382A]">1er juin 2026</p>
+                                <p class="text-[15px] font-extrabold text-[#0D382A]">10</p>
+                            </div>
+                            <div>
+                                <button
+                                    class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-2xl shadow"><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                <button
+                                    class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-2xl shadow"><i
+                                        class="fa-solid fa-user-minus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col bg-[#DDE6DF] rounded-xl justify-center items-center w-125 h-97.5 gap-5">
+                <p class="text-[24px] font-bold text-[#143B32]"><i class="fa-solid fa-user-plus"></i> Une place pour un
+                    ami</p>
+                <div class="flex flex-col gap-2">
+                    <p class="font-bold text-[#143B32] text-[12px] self-start pl-10">User</p>
+                    <div>
+                        <input type="text" placeholder="Entrer un user..."
+                            class="outline-none text-[#143B32] text-[12px] self-start pl-10 h-10 w-80 rounded-xl bg-white">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <p class="font-bold text-[#143B32] text-[12px] self-start pl-10">Nom</p>
+                    <div>
+                        <input type="text" placeholder="Entrer un nom..."
+                            class="outline-none text-[#143B32] text-[12px] self-start pl-10 h-10 w-80 rounded-xl bg-white">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <button class="h-10 w-80 rounded-xl bg-[#143B32] text-white">Ajouter</button>
+                    <button class="h-10 w-80 rounded-xl bg-white">Annuler</button>
+                </div>
+            </div>
+        </div>
+    </main>
 </html>
