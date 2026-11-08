@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body class="font-['Barlow_Condensed'] ">
+    <header>
+        <nav class="flex items-center justify-between w-full px-10 h-[60px] bg-[#F7F9F5] border-b border-[#DDE4DB]">
+            <a href="#" class="text-[#183D32] text-lg font-extrabold italic">FL/ FitLeague</a>
+            <ul class="flex items-center gap-2 text-[10px] font-medium text-[#183D32]">
+                <li><a href="accueil.html"
+                        class="nav-link block px-3 py-2 rounded-full hover:bg-[#C9E98B] transition-colors">Accueil</a>
+                </li>
+                <li><a href="Classement.html"
+                        class="nav-link active block px-3 py-2 rounded-full hover:bg-[#C9E98B] transition-colors">Classement</a>
+                </li>
+                <li><a href="defisForm.html"
+                        class="nav-link block px-3 py-2 rounded-full hover:bg-[#C9E98B] transition-colors">Défis</a>
+                </li>
+                <li><a href="Participants.html"
+                        class="nav-link block px-3 py-2 rounded-full hover:bg-[#C9E98B] transition-colors">Participants</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="p-5">
+        <section class="flex overflow-hidden  rounded-lg ">
+            <div class="bg-[#143B32] flex flex-col p-8 justify-between w-1/2 items-start ">
+                <p class="text-[#C9E58B] text-xs font-semibold ">MOINS D'EXCUSES. PLUS DE SOUVENIRS.</p>
+                <h1 class="text-[#F7F9F4] text-7xl  font-bold ">ENSEMBLE, ON VA <br> PLUS LOIN.</h1>
+                <p class="text-[#DDE6DF] text-sm font-medium">Un défi, quelques amis et l'envie de se dépasser. Le
+                    prochain départ
+                    se
+                    <br>
+                    décide ici.
+                </p>
+                <a class=" text-[#143B32]  p-2 bg-[#C9E58B] rounded-md w-[125px] font-bold" href="">+ Créer un défi </a>
+
+
+            </div>
+
+            <div><img class=" " src="image/Sport entre amis.png" alt=""></div>
+        </section>
+        <section>
+            <div>
+                <h2 class="text-[#143B32] text-xl font-bold">Nos défis du moment</h2>
+                <div class="flex">
+                    <input type="text" class="border-1">
+                    <div><button>Tous</button>
+                        <button>En cours</button>
+                        <button>Treminé</button>
+                        <button>Annulé</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="flex justify-between gap-2" id="defi-container">
+            <dic class="shadow-xl overflow-hidden  rounded-lg  ">
+                <img src="image/Photo.png" class="">
+                <div class="p-5 text-[#143B32]">
+                    <div class="flex justify-between  items-center">
+                        <p class="text-xs ">Course à pied</p>
+                        <a class="text-[#C9E58B] bg-[#143B32] p-2 rounded-full" href="">En cours</a>
+                    </div>
+
+                    <h3 class="text-xl font-bold">Cap sur 100 Km</h3>
+                    <i class="fa-solid fa-calendar"></i>
+                    <p>30 juin 2026 · 6 participants</p>
+                    <div>
+                        <i class="fa-solid fa-pen"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+
+
+                </div>
+            </dic>
+            <!-- <dic class=""> <img src="image/Photo (1).png" class="rounded-t-sm">
+                <div>
+                    <p>Cyclisme</p>
+                    <p>À vélo, les amis !</p>
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </dic>
+            <dic> <img src="image/Photo (2).png" alt="">
+                <div>
+                    <p>Renforcement</p>
+                    <h3>Le club des 300</h3>
+                    <p></p>
+                </div>
+            </dic> -->
+
+        </section>
+    </main>
+    <script src="./js/data.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body class="bg-">
+    <header>
+        <nav class="flex items-center justify-between w-full px-10 h-[60px] bg-[#F7F9F5] border-b border-[#DDE4DB]">
+            <a href="#" class="text-[#183D32] text-lg font-extrabold italic">FL/ FitLeague</a>
+            <ul class="flex items-center gap-2 text-[10px] font-medium text-[#183D32]">
+                <li><a href="accueil.html"
+                        class="nav-link block px-3 py-2 rounded-full hover:bg-[#C9E98B] transition-colors">Accueil</a>
+                </li>
+                <li><a href="Classement.html"
+                        class="nav-link active block px-3 py-2 rounded-full hover:bg-[#C9E98B] transition-colors">Classement</a>
+                </li>
+                <li><a href="defisForm.html"
+                        class="nav-link block px-3 py-2 rounded-full hover:bg-[#C9E98B] transition-colors">Défis</a>
+                </li>
+                <li><a href="Participants.html"
+                        class="nav-link block px-3 py-2 rounded-full hover:bg-[#C9E98B] transition-colors">Participants</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="pb-5">
+        <div class="flex flex-col gap-1.5 pt-10 pl-14 pb-9">
+            <p class="text-[14px] font-normal text-[#143B32]">LES ÉCHAPPÉS</p>
+            <h1 class="text-[52px] font-extrabold text-[#143B32]">Participants</h1>
+        </div>
+        <div class="flex justify-evenly gap-10 px-10">
+            <div class="w-full max-w-350 mx-auto">
+                <div class="flex flex-col gap-2">
+                    <div class="pl-10 flex mb-10 h-10 border border-[#EBEFEA] shadow-xs rounded-2xl">
+                        <input
+                            class="self-center text-base font-normal text-[#0D382A] border-none outline-none w-full pr-10"
+                            type="text" placeholder="Rechercher un prénom, un nom...">
+                    </div>
+                    <div class="flex justify-between items-center text-[15px] font-bold text-[#A3B2A6] pl-6 pr-19 pb-6">
+                        <p>PARTICIPANT</p>
+                        <div class="flex gap-29">
+                            <p>SCORE</p>
+                            <div>
+                                <p>ACTIONS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2" id="participantsList">
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col bg-[#DDE6DF] rounded-xl justify-center items-center w-115 h-97.5 px-5">
+                <p class="text-[24px] font-bold text-[#143B32]"><i class="fa-solid fa-user-plus"></i> Une place pour
+                    un
+                    ami</p>
+                <form id="paricipantFormulaire">
+                    <div class="flec flex-col gap-5 px-5">
+                        <div class="flex flex-col gap-2 py-5">
+                            <p class="font-bold text-[#143B32] text-[12px] self-start ">Pseudo</p><span class="font-normal text-[#7C0D0E] text-[12px]" id="pseudoMessage"></span>
+                            <div>
+                                <input type="text" name="pseudoInput" placeholder="Entrer un Pseudo..."
+                                    class="outline-none text-[#143B32] text-[12px] self-start pl-5 h-10 w-80 rounded-xl bg-white"
+                                    id="pseudoInput">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2 pb-5">
+                            <p class="font-bold text-[#143B32] text-[12px] self-start ">Nom</p>
+                            <div>
+                                <input type="text" name="nomInput" placeholder="Entrer un nom..."
+                                    class="outline-none text-[#143B32] text-[12px] self-start pl-5 h-10 w-80 rounded-xl bg-white"
+                                    id="nomInput">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <button class="h-10 w-80 rounded-xl bg-[#143B32] text-white" id="addButton" type="submit">+
+                                Ajouter</button>
+                            <button class="h-10 w-80 rounded-xl bg-white " type="reset" id="annulerButton">Annuler
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="participants.js"></script>
+</body>
+
+</html>

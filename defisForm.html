@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="flex items-center justify-between w-full px-10 h-[60px] bg-[#F7F9F5] border-b border-[#DDE4DB]">
+            <a href="#" class="text-[#183D32] text-lg font-extrabold italic">FL/ FitLeague</a>
+            <ul class="flex items-center gap-2 text-[10px] font-medium text-[#183D32]">
+                <li><a href="accueil.html"
+                        class="nav-link block px-3 py-2 rounded-full hover:bg-[#C9E98B] transition-colors">Accueil</a>
+                </li>
+                <li><a href="Classement.html"
+                        class="nav-link active block px-3 py-2 rounded-full hover:bg-[#C9E98B] transition-colors">Classement</a>
+                </li>
+                <li><a href="defisForm.html"
+                        class="nav-link block px-3 py-2 rounded-full hover:bg-[#C9E98B] transition-colors">Défis</a>
+                </li>
+                <li><a href="Participants.html"
+                        class="nav-link block px-3 py-2 rounded-full hover:bg-[#C9E98B] transition-colors">Participants</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="bg-[#F7F9F5] p-8">
+            <a href="">← Retour aux défis</a>
+            <h2 class="text-[45px] font-bold text-[#183D32] ">Ajouter un défi</h2>
+        </div>
+        <section class="bg-[#F7F9F5] p-8">
+            <div>
+                <form action="" class="">
+                    <div class="flex text-[#183D32] flex-col  "> <label for="">Nom de défi *</label> <br>
+                        <input type="text" placeholder="Le Tour du lac " class="border-1 rounded-sm">
+                    </div>
+                    <div class="flex place-content-between">
+                        <div class="flex text-[#183D32] flex-col ">
+                            <label for=""> Sport *</label><br>
+                            <select name="" id="">
+                                <option value="">sport1</option>
+                                <option value="">sport2</option>
+                                <option value="">sport3</option>
+                                <option value="">sport4</option>
+                                <option value="">sport5</option>
+                            </select>
+                        </div>
+                        <div class="flex text-[#183D32] flex-col "> <label for=""> Objectif *</label> <br><input
+                                type="text" placeholder="60" class="border-1 rounded-sm"></div>
+                    </div>
+                    <div class="flex place-content-between">
+                        <div class="flex text-[#183D32] flex-col "> <label for="">Début *</label> <br>
+                            <input type="text" placeholder="21/06/2026" class="border-1 rounded-sm">
+                        </div>
+                        <div class="flex text-[#183D32] flex-col "> <label for="">Fin *</label> <br>
+                            <input type="text" placeholder="28/06/2026" class="border-1 rounded-sm">
+                        </div>
+                    </div>
+                    <div class="flex text-[#183D32] flex-col "> <label for="">Unité *</label> <br>
+                        <select name="" id="">
+                            <option value="">sport1</option>
+                            <option value="">sport2</option>
+                            <option value="">sport3</option>
+                            <option value="">sport4</option>
+                            <option value="">sport5</option>
+                        </select>
+
+                    </div>
+                    <div class="flex text-[#183D32] flex-col "> <label for="">Unité *</label> <br>
+                        <input type="text" class="border-1 rounded-sm"
+                            placeholder="Une semaine pour découvrir les routes autour du lac. Chacun roule à son rythme et ajoute ses sorties. On termine ensemble dimanche !">
+                    </div>
+
+                </form>
+            </div>
+            <div class="mt-6 ">
+                <button class="border-1 rounded-sm bg-[#143B32] text-[#F7F9F4] p-1 ">Créer le défi</button><button
+                    class="border-1 rounded-sm p-1"> Annuler</button>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
